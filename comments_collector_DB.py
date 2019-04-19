@@ -26,7 +26,7 @@ def addToDB(comments_json):
             database=db_target,
         )
 
-        sql_insert_query = "INSERT INTO json_col VALUES %s"
+        sql_insert_query = "INSERT INTO json_test VALUES %s"
 
         # Do stuff
         cursor = connection.cursor()

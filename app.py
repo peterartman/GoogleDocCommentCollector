@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 fileID = '1IPDyDzqnCR2VQf1liPh-j_5eUEjQmz9ABnFNAYPZ4sI'
 json_comments = commentcollector.getcomments(fileID)
-comments_collector_DB.addToDB(json_comments)
+# comments_collector_DB.addToDB(json_comments)
 comments=json.dumps(json_comments)
 @app.route('/')
 def hello() -> str:
