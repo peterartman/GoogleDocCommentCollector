@@ -1,15 +1,13 @@
 import mysql.connector
 import sshtunnel
-<<<<<<< HEAD
+
 import commentcollector
 import json
 from datetime import datetime
 
 commentslist = commentcollector.getcomments('1IPDyDzqnCR2VQf1liPh-j_5eUEjQmz9ABnFNAYPZ4sI')
 text_aaa = "aaaaaaa"
-=======
 
->>>>>>> 38588a88ec29b0f704163f863ef2721e50d30fcf
 sshtunnel.SSH_TIMEOUT = 5.0
 sshtunnel.TUNNEL_TIMEOUT = 5.0
 
@@ -33,7 +31,7 @@ with sshtunnel.SSHTunnelForwarder(
         host=db_host, port=tunnel.local_bind_port,
         database=db_target,
     )
-<<<<<<< HEAD
+
     print(connection)
     query = connection.cursor()
 
@@ -55,7 +53,7 @@ with sshtunnel.SSHTunnelForwarder(
 
     connection.commit()
     print(query.rowcount, "record inserted.")
-=======
+
 
     sql_insert_query = '"INSERT INTO json_test VALUES %s"'
 
@@ -64,5 +62,5 @@ with sshtunnel.SSHTunnelForwarder(
     # cursor.execute(sql_insert_query, comments_json)
     connection.commit()
     # print(myDB.rowcount, "record inserted.")
->>>>>>> 38588a88ec29b0f704163f863ef2721e50d30fcf
+
     connection.close()
