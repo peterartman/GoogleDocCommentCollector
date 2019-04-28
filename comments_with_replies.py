@@ -2,7 +2,11 @@ from __future__ import print_function
 from googleapiclient.discovery import build
 
 
+<<<<<<< HEAD
 # server to server authentication SERVICE_ACCOUNT_FILE = 'client_id_server.json'
+=======
+# server to server authenSERVICE_ACCOUNT_FILE = 'client_id_server.json'tication
+>>>>>>> 38588a88ec29b0f704163f863ef2721e50d30fcf
 from google.oauth2 import service_account
 
 # If modifying these scopes, delete the file token.pickle.
