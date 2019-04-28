@@ -18,7 +18,7 @@ def about():
 
 @app.route("/sourceselection")
 def sourceselection():
-    return "You are on gcc.pythonanywhere.com/sourceselection"
+    return "You are on webpage gcc.pythonanywhere.com/sourceselection"
 
 
 if __name__ == "__main__":
