@@ -2,6 +2,7 @@
 
 from flask import Flask
 from flask import render_template
+from flask import request
 
 app = Flask(__name__)
 
@@ -11,9 +12,10 @@ def index() -> str:
     return render_template("index.html")
 
 
-@app.route("/about")
-def about():
-    return render_template("about.html")
+@app.route("/comments")
+def comments():
+    # return "fileID " + request.form["fileID"]
+    return render_template("comments.html")
 
 
 @app.route("/sourceselection")
