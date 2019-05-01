@@ -34,5 +34,5 @@ def addToDB(comments_json):
         cursor = connection.cursor()
         cursor.execute(sql_insert_query, comments_json)
         connection.commit()
-        # print(myDB.rowcount, "record inserted.")
+        print(connection.rowcount, "record inserted.")
         connection.close()

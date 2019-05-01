@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5ebbfdd6-6721-44bc-857f-8269be0922b1" name="gcc.pythonanywhere.com" url="http://ssh.pythonanywhere.com">
+        <fileTransfer host="ssh.pythonanywhere.com" port="22" rootFolder="/home/gcc" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
