@@ -5,12 +5,9 @@
     <title>Google Comment Collector</title>
 </head>
 <body>
-<h1>Total comments: {{ total_comments }}</h1>
-<form>
-Enter the url:<br><br>
-<input name="fileID" type="text" size="100" maxlength="100"><br><br>
-<input name="Reset" type="Reset">
-<input name="Send" type="button" value="Fetch" ><br>
-</form>
+  <form action = "http://localhost:5000/fileinformation" method = "POST">
+     <p><label for="fileURL">Enter file URL: </label><input name = "fileurl" type = "text" size="100" maxlength="100"></p>
+     <p><input name="reset" type = "reset" value = "reset"> <input name = "submit" type = "submit" value = "submit" /></p>
+  </form>
 </body>
 </html>
